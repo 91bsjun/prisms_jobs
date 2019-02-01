@@ -8,7 +8,7 @@ class JobsError(Exception):
         super(JobsError, self).__init__()
 
     def __str__(self):
-        return self.jobid + ": " + self.msg
+        return str(self.jobid) + ": " + self.msg
     
 # import into 'prisms_jobs'
 from prisms_jobs.job import Job
